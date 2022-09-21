@@ -1,0 +1,105 @@
+.top-nav {
+  background: var(--brand);
+  color: fff;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.nav_mail a {
+  display: inline-flex;
+  padding: 0.5rem 0;
+  color: #fff;
+  align-items: center;
+}
+.nav_mail a i {
+  color: #fff;
+  margin-right: 0.5rem;
+  padding: 0 0.5rem;
+}
+.social-icon {
+  text-align: center;
+  margin: auto 0;
+}
+
+.social-icon a {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  display: inline-flex;
+  text-decoration: none;
+  transition: all linear 0.5s;
+}
+.social-icon a i {
+  color: #fff;
+  margin: auto auto;
+  font-size: 1.2rem;
+}
+.social-icon a:hover {
+  background: #fff;
+}
+.social-icon a:hover i {
+  color: var(--brand);
+}
+
+/* Nav bar design */
+
+.navbar-nav .nav-item {
+  text-align: center;
+}
+.navbar-nav .nav-item .nav-link {
+  color: var(--dark);
+}
+
+.active {
+  color: var(--brand);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--brand);
+}
+.navbar-nav .nav-item:last-child {
+  color: var(--dark);
+  background: var(--brand);
+  justify-items: center;
+  border-radius: 0.2rem;
+  margin-left: 1rem;
+}
+.navbar-nav .nav-item:last-child a {
+  color: white;
+}
+.navbar-nav .nav-item:last-child a:hover {
+  color: white;
+  background-color: #d64022;
+}
+
+.btn {
+  padding: 0.5rem 1.8rem;
+}
+.navbar button {
+  padding: 0.2rem 0.7rem;
+  border: 1px solid rgba(191, 182, 182, 0.8);
+  border-radius: 0.2rem;
+  background: transparent;
+
+}
+.navbar button span {
+  font-size: 1.2rem;
+  color: rgba(22, 20, 20, 0.8);
+}
+.brand_text {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.brand_text .dot {
+  position: absolute;
+  left: auto;
+  margin: 0;
+  padding: 0;
+}
+h3{
+  color:green;
+}
