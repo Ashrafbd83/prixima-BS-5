@@ -76,12 +76,21 @@
 .btn {
   padding: 0.5rem 1.8rem;
 }
+.btn-brand {
+  background-color: var(--brand);
+  background-color: var(--brand);
+  color: #fff;
+}
+.btn-brand:hover {
+  background-color: #d64022;
+  border-color: #d64022;
+  color: #fff;
+}
 .navbar button {
   padding: 0.2rem 0.7rem;
   border: 1px solid rgba(191, 182, 182, 0.8);
   border-radius: 0.2rem;
   background: transparent;
-
 }
 .navbar button span {
   font-size: 1.2rem;
@@ -100,6 +109,131 @@
   margin: 0;
   padding: 0;
 }
-h3{
-  color:green;
+h3 {
+  color: green;
+}
+
+/* Slider */
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  width: 3.75rem !important;
+  height: 3.75rem !important;
+  display: block;
+  display: grid;
+  place-items: center;
+  color: #fff !important;
+  border-radius: 6.25rem !important;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  font-weight: 600btn-outline-light !important;
+  font-size: 0.9rem !important;
+  transition: all 0.4s ease;
+  margin-top: -1.9rem !important;
+}
+.owl-prev {
+  left: 0;
+}
+.owl-next {
+  right: 0;
+}
+.owl-prev:hover,
+.owl-next:hover {
+  background-color: var(--brand) !important ;
+}
+
+.owl-dot.active span {
+  background-color: var(--brand) !important ;
+}
+
+.slide {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.slide1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/bg_banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/bg_banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide .display-3 {
+  text-transform: uppercase;
+  color: #fff;
+}
+.crosal_h1{
+  font-size:8rem;
+}
+
+.info-box img{
+  width:5.63rem;
+}
+
+
+.milestone_section{
+  background: linear-gradient(rgba(255, 77, 41, 0.8), rgba(255, 77, 41, 0.5)), url(../img/bg_banner1.jpg);
+  background-position:center;
+  background-blend-mode:color-burn;
+
+}
+.service_section{
+  box-shadow: var(--shadow);
+}
+.service_cards_all{
+  display: flex;
+  flex-direction: row;
+  gap:1.5rem;
+}
+.service_card{
+  box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.4);
+}
+.project{
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.project h6{
+  font-weight: 400;
+}
+.project h6::before{
+  content:"";
+  height: 2px;
+  width: 30px;
+  display: inline-block;
+  background: var(--brand);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.project .overlay{
+  width:100%;
+  height: 13.7rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background:linear-gradient(180deg, rgba(255, 76, 41, 0) 0%, var(--dark) 100%);
+}
+
+.project .content{
+  position: absolute;
+  left:10%;
+  bottom: 10%;
+}
+
+.project h2,
+.project h6{
+  color:#fff;
 }
