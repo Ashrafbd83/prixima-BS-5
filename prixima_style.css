@@ -189,7 +189,6 @@ h3 {
   background-blend-mode: color-burn;
 }
 .service_section {
-
 }
 .service_cards_all {
   display: flex;
@@ -243,18 +242,17 @@ h3 {
 .project h6 {
   color: #fff;
 }
-.work_section{
-background-color:var(--bs-gray-100)
+.work_section {
+  background-color: var(--bs-gray-100);
 }
 
-
-.team-member .image{
+.team-member .image {
   position: relative;
   z-index: 2;
   overflow: hidden;
 }
-.team-member .overlay{
-  width:100%;
+.team-member .overlay {
+  width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
@@ -264,10 +262,10 @@ background-color:var(--bs-gray-100)
   transition: all 0.4s ease;
 }
 
-.team-member .social-icon{
-  position:absolute;
-  top:60%;
-  left:50%;
+.team-member .social-icon {
+  position: absolute;
+  top: 60%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   opacity: 0;
@@ -279,64 +277,99 @@ background-color:var(--bs-gray-100)
   height: 40px;
 }
 
-.team-member:hover .social-icon{
-  top:50%;
+.team-member:hover .social-icon {
+  top: 50%;
   opacity: 1;
 }
 
-.team-member:hover .overlay{
-  top:0;
+.team-member:hover .overlay {
+  top: 0;
   opacity: 1;
 }
 
-.team-member h5{
-  color:var(--bs-gray-900);
-  padding-top:1.5rem;
+.team-member h5 {
+  color: var(--bs-gray-900);
+  padding-top: 1.5rem;
 }
 
-#reviews{
-  background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), 
-  rgba(8, 32, 50, 0.8)), url(../img/bg_banner1.jpg), #082032;;
+#reviews {
+  background: linear-gradient(
+      -90deg,
+      rgba(8, 32, 50, 0.8),
+      rgba(8, 32, 50, 0.8)
+    ),
+    url(../img/bg_banner1.jpg), #082032;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.review{
+.review {
   text-align: center;
   z-index: 2;
   position: relative;
   margin: 15px;
   max-width: 768px;
-  margin:auto;
+  margin: auto;
 }
 
-.review img{
-  width:80px !important;
-  height:80px;
+.review img {
+  width: 80px !important;
+  height: 80px;
   border-radius: 100px;
-  margin:auto;
+  margin: auto;
 }
-.review h3{
+.review h3 {
   font-size: 1.3rem;
-  line-height:1.5rem;
+  line-height: 1.5rem;
   font-weight: 400;
 }
 
-.blog_item{
+.blog_item {
   position: relative;
   background-color: #fff;
-  box-shadow:0px 0px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
-.blog_item .content{
-  padding:32px;
+.blog_item .content {
+  padding: 32px;
 }
-.blog_item a{
+.blog_item a {
   position: absolute;
-  top:20px;
-  left:20px;
+  top: 20px;
+  left: 20px;
   background-color: var(--brand);
   border-radius: 100px;
   text-decoration: none;
-  color:#fff;
+  color: #fff;
+}
+
+footer {
+  background: linear-gradient(
+      -90deg,
+      rgba(8, 32, 50, 0.8),
+      rgba(8, 32, 50, 0.8)
+    ),
+    url(../img/bg_banner1.jpg), #082032;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(130, 125, 125);
+}
+.footer_area {
+
+}
+
+.footer_area .social-icon a {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+
+.footer_area .copy_right {
+  color: #adb3b9;
 }
