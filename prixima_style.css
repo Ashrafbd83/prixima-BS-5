@@ -174,42 +174,44 @@ h3 {
   text-transform: uppercase;
   color: #fff;
 }
-.crosal_h1{
-  font-size:8rem;
+.crosal_h1 {
+  font-size: 8rem;
 }
 
-.info-box img{
-  width:5.63rem;
+.info-box img {
+  width: 5.63rem;
 }
 
-
-.milestone_section{
-  background: linear-gradient(rgba(255, 77, 41, 0.8), rgba(255, 77, 41, 0.5)), url(../img/bg_banner1.jpg);
-  background-position:center;
-  background-blend-mode:color-burn;
+.milestone_section {
+  background: linear-gradient(rgba(255, 77, 41, 0.8), rgba(255, 77, 41, 0.5)),
+    url(../img/bg_banner1.jpg);
+  background-position: center;
+  background-blend-mode: color-burn;
+}
+.service_section {
 
 }
-.service_section{
-  box-shadow: var(--shadow);
-}
-.service_cards_all{
+.service_cards_all {
   display: flex;
   flex-direction: row;
-  gap:1.5rem;
+  gap: 1.5rem;
 }
-.service_card{
+.service_card {
   box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.4);
 }
-.project{
+
+/* Carosal Project Section */
+
+.project {
   position: relative;
   overflow: hidden;
   z-index: 2;
 }
-.project h6{
+.project h6 {
   font-weight: 400;
 }
-.project h6::before{
-  content:"";
+.project h6::before {
+  content: "";
   height: 2px;
   width: 30px;
   display: inline-block;
@@ -218,22 +220,123 @@ h3 {
   margin-right: 10px;
 }
 
-.project .overlay{
-  width:100%;
-  height: 13.7rem;
+.project .overlay {
+  width: 100%;
+  height: 220px;
   position: absolute;
   bottom: 0;
   left: 0;
-  background:linear-gradient(180deg, rgba(255, 76, 41, 0) 0%, var(--dark) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 76, 41, 0) 0%,
+    var(--dark) 100%
+  );
 }
 
-.project .content{
+.project .content {
   position: absolute;
-  left:10%;
+  left: 10%;
   bottom: 10%;
 }
 
 .project h2,
-.project h6{
+.project h6 {
+  color: #fff;
+}
+.work_section{
+background-color:var(--bs-gray-100)
+}
+
+
+.team-member .image{
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.team-member .overlay{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: -10%;
+  background-color: rgba(255, 77, 41, 0.7);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.team-member .social-icon{
+  position:absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.team-member .social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+.team-member:hover .social-icon{
+  top:50%;
+  opacity: 1;
+}
+
+.team-member:hover .overlay{
+  top:0;
+  opacity: 1;
+}
+
+.team-member h5{
+  color:var(--bs-gray-900);
+  padding-top:1.5rem;
+}
+
+#reviews{
+  background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), 
+  rgba(8, 32, 50, 0.8)), url(../img/bg_banner1.jpg), #082032;;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.review{
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin: 15px;
+  max-width: 768px;
+  margin:auto;
+}
+
+.review img{
+  width:80px !important;
+  height:80px;
+  border-radius: 100px;
+  margin:auto;
+}
+.review h3{
+  font-size: 1.3rem;
+  line-height:1.5rem;
+  font-weight: 400;
+}
+
+.blog_item{
+  position: relative;
+  background-color: #fff;
+  box-shadow:0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+.blog_item .content{
+  padding:32px;
+}
+.blog_item a{
+  position: absolute;
+  top:20px;
+  left:20px;
+  background-color: var(--brand);
+  border-radius: 100px;
+  text-decoration: none;
   color:#fff;
 }
